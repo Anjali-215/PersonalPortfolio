@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Demo | Anjali Krishna</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 0 30px #00ffd0a0;
+        }
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <a href="#" id="backBtn" class="btn btn-outline-info back-btn">
+        <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
+    </a>
+    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center mb-5 section-title" id="project-title">Project Demo</h1>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo" controls>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="lead" id="project-description">Watch the demo of this project to see its features and functionality in action.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Project video files mapping
+        const videoMap = {
+            'nutriluna': 'nutriluna.mp4',
+            'revelations': 'Revelations.mp4',
+            'playlist': 'playlistmanagement.mp4',
+            'netflix': 'NetflixClone.mp4',
+            'olx': 'olx.mp4',
+            'todo': 'todo.mp4',
+            'hospital': 'hospital.mp4',
+            'safewalk': 'safewalk.mp4',
+            'trackurplate': 'TrackUrplate.mp4',
+            'snake': 'snake.mp4'
+        };
+
+        // Project titles mapping
+        const projectTitles = {
+            'nutriluna': 'NutriLuna - Personalized Diet Tracker',
+            'revelations': 'Revelations Event Management App',
+            'playlist': 'Playlist Management System',
+            'netflix': 'Netflix Clone',
+            'olx': 'OLX Clone',
+            'todo': 'To-Do List Application',
+            'hospital': 'Hospital Management System',
+            'safewalk': 'SafeWalk - Women Safety App',
+            'trackurplate': 'TrackUrPlate - Smart Meal Tracker',
+            'snake': 'Snake Game'
+        };
+
+        // Get project from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const project = urlParams.get('project');
+        
+        // Update page content based on project
+        if (project && videoMap[project]) {
+            document.getElementById('projectVideo').src = videoMap[project];
+            document.getElementById('project-title').textContent = projectTitles[project];
+            document.title = `${projectTitles[project]} Demo | Anjali Krishna`;
+            
+            // Update back button to return to specific project
+            document.getElementById('backBtn').href = `index.html#projects`;
+        } else {
+            document.getElementById('projectVideo').innerHTML = 'Video not found for this project.';
+            document.getElementById('project-title').textContent = 'Project Not Found';
+            document.getElementById('project-description').textContent = 'The requested project demo is not available.';
+            document.getElementById('backBtn').href = 'index.html#projects';
+        }
+    </script>
+</body>
+</html> 
