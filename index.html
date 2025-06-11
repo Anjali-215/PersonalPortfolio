@@ -18,14 +18,40 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user me-1"></i>About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-graduation-cap me-1"></i>Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code me-1"></i>Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram me-1"></i>Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certifications"><i class="fas fa-certificate me-1"></i>Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#achievements"><i class="fas fa-trophy me-1"></i>Achievements</a></li>
-          <li class="nav-item"><a class="nav-link" href="#leadership"><i class="fas fa-users-cog me-1"></i>Leadership</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          
+
+         
         </ul>
         <button id="theme-toggle" class="btn btn-outline-info ms-3" title="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
       </div>
@@ -40,10 +66,12 @@
     <h1 class="display-4 fw-bold">Anjali Krishna</h1>
     <p class="lead">Full Stack Developer | Data Analyst | MCA @ CHRIST University</p>
     <div class="mt-3">
-      <a href="https://www.linkedin.com/in/anjalikrishna5" class="btn btn-outline-light btn-lg mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Anjali-215" class="btn btn-outline-light btn-lg mx-2" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <a href="tel:+919656295635" class="btn btn-outline-light btn-lg mx-2"><i class="fas fa-phone"></i></a>
-      <a href="mailto:anjalikrishna2163@gmail.com" class="btn btn-outline-light btn-lg mx-2"><i class="fas fa-envelope"></i></a>
+      <a href="resume.pdf" download class="btn btn-outline-light btn-lg mx-2 tooltip-btn" data-tooltip="Download my resume"><i class="fas fa-file-download"></i></a>
+
+      <a href="https://www.linkedin.com/in/anjalikrishna5" class="btn btn-outline-light btn-lg mx-2 tooltip-btn" data-tooltip="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Anjali-215" class="btn btn-outline-light btn-lg mx-2 tooltip-btn" data-tooltip="Check out my GitHub projects" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="tel:+919656295635" class="btn btn-outline-light btn-lg mx-2 tooltip-btn" data-tooltip="Call me at +91 9656295635"><i class="fas fa-phone"></i></a>
+      <a href="mailto:anjalikrishna2163@gmail.com" class="btn btn-outline-light btn-lg mx-2 tooltip-btn" data-tooltip="Send me an email"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
   <!-- About Section -->
@@ -54,17 +82,19 @@
       </div>
       <div class="col-md-8">
         <h2 class="mb-3 section-title">About Me</h2>
-        <p class="fs-5 mb-2 fst-italic text-info mb-2">
-          Hi, I'm <b>Anjali Krishna</b>, a passionate tech enthusiast currently pursuing my MCA at CHRIST (Deemed to be University), Bangalore. I love building full stack web applications and exploring the world of data as an aspiring Data Analyst and Scientist. With a strong foundation in Computer Science and hands-on experience in both frontend and backend technologies, I enjoy solving real-world problems through code. I'm deadline-driven, always eager to learn, and believe in continuous self-improvement.
-        </p>
-       
-        <ul class="list-inline mt-3">
-          <li class="list-inline-item"><i class="fas fa-map-marker-alt me-2"></i>Bangalore, India</li>
-          <li class="list-inline-item"><i class="fas fa-envelope me-2"></i>anjalikrishna2163@gmail.com</li>
-          <li class="list-inline-item"><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/anjalikrishna5" class="text-info" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li class="list-inline-item"><i class="fab fa-github me-2"></i><a href="https://github.com/Anjali-215" class="text-info" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li class="list-inline-item"><i class="fas fa-phone me-2"></i><a href="tel:+919656295635" class="text-info">+91 9656295635</a></li>   
-        </ul>
+        <div class="about-content">
+          <p class="fs-5 mb-2 fst-italic text-info mb-2">
+            Hi, I'm <b>Anjali Krishna</b>, a passionate tech enthusiast currently pursuing my MCA at CHRIST (Deemed to be University), Bangalore. I love building full stack web applications and exploring the world of data as an aspiring Data Analyst and Scientist. With a strong foundation in Computer Science and hands-on experience in both frontend and backend technologies, I enjoy solving real-world problems through code. I'm deadline-driven, always eager to learn, and believe in continuous self-improvement.
+          </p>
+         
+          <ul class="list-inline mt-3">
+            <li class="list-inline-item"><i class="fas fa-map-marker-alt me-2"></i>Bangalore, India</li>
+            <li class="list-inline-item"><i class="fas fa-envelope me-2"></i>anjalikrishna2163@gmail.com</li>
+            <li class="list-inline-item"><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/anjalikrishna5" class="text-info" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li class="list-inline-item"><i class="fab fa-github me-2"></i><a href="https://github.com/Anjali-215" class="text-info" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li class="list-inline-item"><i class="fas fa-phone me-2"></i><a href="tel:+919656295635" class="text-info">+91 9656295635</a></li>   
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -108,6 +138,57 @@
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Experience</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="experience-card">
+            <div class="experience-timeline">
+              <div class="experience-date">
+                <span class="month"> From May</span>
+                <span class="year">2024</span>
+                <span class="present">Ongoing</span>
+              </div>
+              <div class="experience-content">
+                <div class="experience-header">
+                  <h3 class="position">Junior Developer</h3>
+                  <h4 class="company">Sensesys Pvt Ltd</h4>
+                  <div class="duration">
+                    <i class="fas fa-briefcase me-2"></i>
+                    <span>Part-time Position</span>
+                  </div>
+                </div>
+                <div class="experience-details">
+                  <div class="responsibilities">
+                    <h5><i class="fas fa-tasks me-2"></i>Key Responsibilities</h5>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i>Developing and maintaining full-stack applications</li>
+                      <li><i class="fas fa-check-circle"></i>Collaborating with cross-functional teams on project development</li>
+                      <li><i class="fas fa-check-circle"></i>Participating in code reviews and implementing best practices</li>
+                      <li><i class="fas fa-check-circle"></i>Contributing to technical documentation and knowledge sharing</li>
+                    </ul>
+                  </div>
+                  <div class="technologies">
+                    <h5><i class="fas fa-code me-2"></i>Technologies Used</h5>
+                    <div class="tech-tags">
+                     
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">Firebase</span>
+                      <span class="tech-tag">Git</span>
+                      <span class="tech-tag">Api calls</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -311,7 +392,7 @@
           <div class="card-footer bg-transparent border-0 d-flex flex-column align-items-center">
             <div class="d-flex gap-2 w-100 mt-2">
               <a href="https://github.com/Anjali-215" class="btn btn-outline-info flex-grow-1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2"></i>View Code</a>
-              <a href="video.html?project=hospital" class="btn btn-outline-info flex-grow-1" target="_blank"><i class="fas fa-play-circle me-2"></i>Watch Demo</a>
+              <button onclick="showVideoError('hospital')" class="btn btn-outline-info flex-grow-1"><i class="fas fa-play-circle me-2"></i>Watch Demo</button>
             </div>
           </div>
         </div>
@@ -326,7 +407,7 @@
           <div class="card-footer bg-transparent border-0 d-flex flex-column align-items-center">
             <div class="d-flex gap-2 w-100 mt-2">
               <a href="https://github.com/Anjali-215/Snakegame" class="btn btn-outline-info flex-grow-1" target="_blank"><i class="fab fa-github me-2"></i>View on GitHub</a>
-              <a href="video.html?project=snake" class="btn btn-outline-info flex-grow-1" target="_blank"><i class="fas fa-play-circle me-2"></i>Watch Demo</a>
+              <button onclick="showVideoError('snake')" class="btn btn-outline-info flex-grow-1"><i class="fas fa-play-circle me-2"></i>Watch Demo</button>
             </div>
           </div>
         </div>
@@ -336,14 +417,74 @@
   <!-- Certifications Section -->
   <section id="certifications" class="container py-5 fade-in">
     <h2 class="mb-4 section-title">Certifications</h2>
-    <ul class="list-group list-group-flush bg-dark">
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>Beginning Frontend Development using React</li>
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>one month Virtual Internship in web development</li>
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>Tata Cybersecurity Security Analyst Job Simulation on Forage, April 2024</li>
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>NO SQL, Infosys Springboard</li>
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>JavaScript by Example, Infosys Springboard</li>
-      <li class="list-group-item bg-dark text-light border-info mb-2"><i class="fas fa-certificate text-info me-2"></i>30 days Master class of Data Anaytics,Novitech institution pvt lmt</li>
-    </ul>
+    <div class="certification-items">
+     
+
+      <div class="certification-item">
+        <ul class="list-group list-group-flush bg-dark">
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-certificate text-info me-2"></i>Beginning Frontend Development using React
+              </div>
+              <a href="https://drive.google.com/file/d/1yUtb1KQik56PUmitcFtqvWiFt7gUOfCw/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-chart-line text-info me-2"></i>Data Analytics Master Class by  Novitech
+              </div>
+              <a href="https://drive.google.com/file/d/19gA2-i5lEdD6dqTVm5PitFXnEARzPq7X/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-certificate text-info me-2"></i>Shadowfox virtual internship in web development
+              </div>
+              <a href="https://drive.google.com/file/d/1HfGYqyQYL3B3eHWKFR1Wj7UWQ7kBuqWN/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fab fa-js text-info me-2"></i>JavaScript by example
+              </div>
+              <a href="https://drive.google.com/file/d/1oHNq7UdCCI86rLg56-i_QZIreRgS2TeN/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-database text-info me-2"></i>NoSQL Database
+              </div>
+              <a href="https://drive.google.com/file/d/1bSNTqqYfxL1DayKpvqdOLK7EgRANBA7n/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+          <li class="list-group-item bg-dark text-light border-info mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <i class="fas fa-cloud text-info me-2"></i>Introduction to Cloud Computing -Udemy
+              </div>
+              <a href="https://drive.google.com/file/d/17pZfsBvGuCv1_srtYU1GVXnWAy0AV6GC/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-info">
+                <i class="fas fa-external-link-alt me-1"></i>View
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   <!-- Achievements Section -->
   <section id="achievements" class="container py-5 fade-in">
@@ -465,6 +606,438 @@
           console.error('Error:', error);
         });
     });
+
+    function showVideoError(project) {
+        const errorMessages = {
+            'hospital': 'Oops! Video demo for Hospital Management System is currently unavailable.',
+            'snake': 'Oops! Video demo for Snake Game is currently unavailable.'
+        };
+
+        const toast = document.createElement('div');
+        toast.className = 'error-toast';
+        toast.textContent = errorMessages[project];
+        document.body.appendChild(toast);
+
+        // Show the toast
+        toast.style.display = 'block';
+
+        // Remove the toast after 3 seconds
+        setTimeout(() => {
+            toast.style.animation = 'slideOut 0.3s ease-out';
+            setTimeout(() => {
+                document.body.removeChild(toast);
+            }, 300);
+        }, 3000);
+    }
   </script>
+  <style>
+    .experience-card {
+      background: rgba(13, 17, 23, 0.7);
+      border: 1px solid #0dcaf0;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px rgba(13, 202, 240, 0.15);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 35px rgba(13, 202, 240, 0.2);
+    }
+
+    .experience-timeline {
+      position: relative;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .experience-timeline::before {
+      content: '';
+      position: absolute;
+      left: 140px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #0dcaf0, transparent);
+      opacity: 0.3;
+    }
+
+    .experience-date {
+      min-width: 100px;
+      text-align: center;
+      padding: 1rem;
+      background: rgba(13, 202, 240, 0.08);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(13, 202, 240, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .experience-date:hover {
+      background: rgba(13, 202, 240, 0.12);
+      transform: scale(1.02);
+    }
+
+    .experience-date .month {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0dcaf0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .experience-date .year {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0.3rem 0;
+    }
+
+    .experience-date .present {
+      font-size: 0.8rem;
+      color: #0dcaf0;
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      background: rgba(13, 202, 240, 0.15);
+      border-radius: 20px;
+      border: 1px solid rgba(13, 202, 240, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .experience-date .present:hover {
+      background: rgba(13, 202, 240, 0.25);
+    }
+
+    .experience-content {
+      flex: 1;
+    }
+
+    .experience-header {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(13, 202, 240, 0.2);
+    }
+
+    .experience-header .position {
+      color: #fff;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .experience-header .company {
+      color: #0dcaf0;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .duration {
+      color: #6c757d;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .duration i {
+      color: #0dcaf0;
+    }
+
+    .experience-details {
+      background: rgba(13, 202, 240, 0.05);
+      border-radius: 12px;
+      padding: 1.2rem;
+      border: 1px solid rgba(13, 202, 240, 0.1);
+    }
+
+    .responsibilities h5, .technologies h5 {
+      color: #0dcaf0;
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    .responsibilities ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .responsibilities li {
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      line-height: 1.6;
+    }
+
+    .responsibilities li i {
+      color: #0dcaf0;
+      font-size: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tech-tag {
+      background: rgba(13, 202, 240, 0.08);
+      color: #0dcaf0;
+      padding: 0.3rem 0.8rem;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(13, 202, 240, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .tech-tag:hover {
+      background: rgba(13, 202, 240, 0.15);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .experience-timeline {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .experience-timeline::before {
+        display: none;
+      }
+
+      .experience-date {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0.8rem;
+      }
+
+      .experience-date .present {
+        margin-top: 0;
+      }
+
+      .experience-header .position {
+        font-size: 1.4rem;
+      }
+
+      .experience-header .company {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Certifications section adjustments */
+    .certification-items {
+      padding: 0.5rem;
+    }
+
+    .list-group-item {
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .btn-sm {
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .section-title {
+      margin-bottom: 1.5rem !important;
+      font-size: 1.8rem;
+    }
+
+    /* Container adjustments */
+    .container {
+      padding: 2rem 1rem;
+    }
+
+    .py-5 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .experience-timeline {
+        gap: 1rem;
+      }
+
+      .experience-date {
+        padding: 0.8rem;
+      }
+
+      .experience-header .position {
+        font-size: 1.4rem;
+      }
+
+      .experience-header .company {
+        font-size: 1.1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+
+    /* Navbar adjustments */
+    .navbar-nav {
+      font-size: 0.9rem;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.7rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        font-size: 0.85rem;
+      }
+      
+      .navbar-nav .nav-link {
+        padding: 0.4rem 0.6rem;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .social-links .btn {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .social-links .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(13, 202, 240, 0.3);
+    }
+
+    .social-links .btn i {
+      font-size: 1.2rem;
+    }
+
+    .btn-outline-light {
+      border-width: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-light:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .btn i {
+      font-size: 1.2rem;
+    }
+
+    @keyframes jump {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .about-img {
+        animation: jump 2s ease-in-out infinite;
+    }
+
+    /* Add these new styles */
+    .tooltip-btn {
+        position: relative;
+    }
+
+    .tooltip-btn::before {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 14px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+    .tooltip-btn::after {
+        content: '';
+        position: absolute;
+        bottom: calc(100% - 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .tooltip-btn:hover::before,
+    .tooltip-btn:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Add these new styles */
+    .error-toast {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(220, 53, 69, 0.9);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        z-index: 1000;
+        display: none;
+        animation: slideIn 0.3s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+  </style>
 </body>
 </html> 
